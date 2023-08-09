@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { BASE_URL, TOKEN_NAME } from '../../constants/constants'
 import { goToLoginPage } from '../../routes/coordinator'
 import { PostsPageContainer, FormSection, PostsSection } from './styled'
-import HeaderBar from '../../components/HeaderBar'
+import HeaderBar from '../../components/HeaderBar/HeaderBar'
 import HorizontalLine from '../../components/HorizontalLine'
 import PostCard from '../../components/PostCard/PostCard'
 

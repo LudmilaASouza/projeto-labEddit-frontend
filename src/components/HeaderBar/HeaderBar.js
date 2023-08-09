@@ -1,8 +1,8 @@
 import { useLocation, useNavigate } from 'react-router-dom';
 import { goToLoginPage, goToPostsPage } from '../../routes/coordinator';
 import { TOKEN_NAME } from '../../constants/constants';
-import CloseIcon from '../svgs/x-close-header.svg';
-import HeaderLogo from '../svgs/logo-header.svg';
+import CloseIcon from '../../svgs/x-close-header.svg';
+import HeaderLogo from '../../svgs/logo-header.svg';
 import { HeaderBarContainer } from './styled'
 
 export default function HeaderBar() {

@@ -4,7 +4,7 @@ import axios from 'axios';
 import FooterBarIcon from '../../svgs/footer-bar.svg';
 import { goToPostsPage } from '../../routes/coordinator';
 import { BASE_URL, TOKEN_NAME } from '../../constants/constants';
-import HeaderBar from '../../components/HeaderBar'
+import HeaderBar from '../../components/HeaderBar/HeaderBar'
 import { FormSection, HeaderSection, SignupPageContainer, TermsBox } from './styled';
 
 export default function SignupPage (){
