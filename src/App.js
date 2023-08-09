@@ -33,6 +33,11 @@ export const AppContainer = styled.div `
   max-width: 100vw;
   height: 926px;
   max-height: 100vh;
+
+  @media (max-width: 768px) {
+    width: 100%; 
+    height: auto;
+  }
 `
 
 export default function App() {
