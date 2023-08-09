@@ -17,26 +17,30 @@ const GlobalStyle = createGlobalStyle `
     text-decoration: none;
   }
 
-  #root {
-    width: 100%;
-    height: 100%;
+  ${'' /* #root {
+    width: 100vw;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #e5e5e5;
-  }
+  } */}
 `
 
 export const AppContainer = styled.div `
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #fafafa;
   width: 428px;
   max-width: 100vw;
   height: 926px;
   max-height: 100vh;
+  border: 2px solid;
 
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px), (max-width: 480px) {
     width: 100%; 
-    height: auto;
+    height: 100%;
   }
 `
 
