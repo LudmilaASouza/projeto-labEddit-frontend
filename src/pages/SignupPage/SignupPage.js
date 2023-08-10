@@ -65,7 +65,7 @@ export default function SignupPage (){
                         onChange={(e) => setEmail(e.target.value)}
                         required
                     />
-                    {/* {error && <p className="error-message">{error}</p>} */}
+                    
                     <input
                         placeholder="Password"
                         type="text"
