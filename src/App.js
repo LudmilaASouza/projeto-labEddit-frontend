@@ -22,33 +22,23 @@ const GlobalStyle = createGlobalStyle `
     width: 100vw;
     height: 100vh;
     display: flex;
-    ${'' /* align-items: center; */}
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     background-color: #e5e5e5;
   }
 `
 
-export const AppContainer = styled.div `
+export const AppContainer = styled.div`
   background-color: #fafafa;
   width: 428px;
   max-width: 100vw;
   height: 926px;
   max-height: 100vh;
-  justify-content: flex-start;
-  border: 1px solid gray;
   
-  @media (max-width: 768px)  {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center; 
-    padding: 20px; 
+  @media (max-width: 375px), (max-width: 414px), (max-width: 768px) {
     width: 100vw;
     height: 100vh;
-    max-width: none;
-    max-height: none;
-  }
-  
+  }  
 `
 
 export default function App() {
