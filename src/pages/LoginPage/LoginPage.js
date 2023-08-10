@@ -35,7 +35,8 @@ export default function LoginPage() {
                 window.localStorage.setItem(TOKEN_NAME, res.data.token)
                 goToPostsPage(navigate)
             })
-            .catch(err => console.log(err))
+            .catch(err => 
+                alert("E-mail ou senha incorreto."))
     }
 
     return (

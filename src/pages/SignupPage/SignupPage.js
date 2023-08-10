@@ -6,6 +6,7 @@ import { goToPostsPage } from '../../routes/coordinator';
 import { BASE_URL, TOKEN_NAME } from '../../constants/constants';
 import HeaderBar from '../../components/HeaderBar/HeaderBar'
 import { FormSection, HeaderSection, SignupPageContainer, TermsBox } from './styled';
+import { findAllByPlaceholderText } from '@testing-library/react';
 
 export default function SignupPage (){
     const navigate = useNavigate()
@@ -34,7 +35,8 @@ export default function SignupPage (){
             .then(res => {
                 window.localStorage.setItem(TOKEN_NAME, res.data.token)
                 goToPostsPage(navigate)
-            }).catch(err => console.log(err))
+            }).catch(err => 
+                alert("E-mail já cadastrado."))
     }
 
     return (
@@ -63,7 +65,7 @@ export default function SignupPage (){
                         onChange={(e) => setEmail(e.target.value)}
                         required
                     />
-
+                    {/* {error && <p className="error-message">{error}</p>} */}
                     <input
                         placeholder="Password"
                         type="text"

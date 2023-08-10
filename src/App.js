@@ -15,33 +15,40 @@ const GlobalStyle = createGlobalStyle `
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    
   }
 
-  ${'' /* #root {
+  #root {
     width: 100vw;
     height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    ${'' /* align-items: center; */}
+    justify-content: flex-start;
     background-color: #e5e5e5;
-  } */}
+  }
 `
 
 export const AppContainer = styled.div `
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: #fafafa;
   width: 428px;
   max-width: 100vw;
   height: 926px;
   max-height: 100vh;
-  border: 2px solid;
-
-  @media screen and (max-width: 768px), (max-width: 480px) {
-    width: 100%; 
-    height: 100%;
+  justify-content: flex-start;
+  border: 1px solid gray;
+  
+  @media (max-width: 768px)  {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+    padding: 20px; 
+    width: 100vw;
+    height: 100vh;
+    max-width: none;
+    max-height: none;
   }
+  
 `
 
 export default function App() {
